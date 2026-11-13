@@ -1,0 +1,51 @@
+{
+  "manifestVersion": 2,
+  "id": "inspo-board",
+  "name": "Inspo",
+  "version": "1.0.0",
+  "description": "Drag screenshots into a sidebar board and keep your references beside your work.",
+  "author": {
+    "name": "Dianne Alter"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/alterdianne/orca-plugin",
+  "engines": {
+    "orca": ">=1.4.246"
+  },
+  "execution": "sandboxed-ui",
+  "pluginApi": 1,
+  "cover": {
+    "path": "assets/cover.png",
+    "alt": "The Inspo panel in Orca's sidebar, showing a pinned screenshot above a two-column grid, next to the expanded viewer."
+  },
+  "screenshots": [
+    {
+      "path": "assets/screenshot-drop.png",
+      "alt": "The empty Inspo panel inviting you to drop screenshots, next to the panel highlighted while three files are dragged over it.",
+      "caption": "Drag screenshots straight into the sidebar.",
+      "theme": "dark"
+    },
+    {
+      "path": "assets/screenshot-pin.png",
+      "alt": "A pinned screenshot shown large at the top of the panel, with the rest of the screenshots in a two-column grid below.",
+      "caption": "Pin the one you're building from.",
+      "theme": "dark"
+    },
+    {
+      "path": "assets/screenshot-expand.png",
+      "alt": "The expanded viewer showing one screenshot larger, with previous and next arrows, the file name, and pin and remove buttons.",
+      "caption": "Click any screenshot to see it larger.",
+      "theme": "dark"
+    }
+  ],
+  "contributes": {
+    "panels": [
+      {
+        "id": "inspo-board",
+        "title": "Inspo",
+        "icon": "layers",
+        "entry": "panel/index.html"
+      }
+    ]
+  }
+}
